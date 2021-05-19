@@ -5,7 +5,7 @@ This is part of a personal project where I try to model the capabilities of magi
 data comes from [this repo](https://github.com/dndManager/dnd5e)  
 I was unable to replicate the scraping code, so I used the file this person made
 
-This repo uses dnd spells as provided data to model how advanced magic is based on several factors. Some factors were too difficult to implemented into the model.
+This repo uses dnd spells as provided data to model how advanced magic is based on several factors. 
 
 
 Qualitatively, Ive identified these factors as foundations to a skilled magic user:  
@@ -19,5 +19,5 @@ Qualitatively, Ive identified these factors as foundations to a skilled magic us
 * Duration (how long the magic lasts)
 * Concentration (mental effort)
 
-These factors make quite a bit of assumptions, but they are meant to be independent of magic systems (can be applied across stories with different behaving magic, assuming assumptions match)
-With the dnd magic system, not all factors could be implemented  
+These factors make quite a bit of assumptions, but they are meant to be independent of magic systems (can be applied across stories with different behaving magic, assuming assumptions match)  
+With the dnd magic system, not all factors could be implemented (like precision, and efficiency)
