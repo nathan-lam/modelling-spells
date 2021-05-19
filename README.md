@@ -16,7 +16,7 @@ Qualitatively, Ive identified these factors as foundations to a skilled magic us
 * Efficiency (rate of casting over time)
 * Capacity (how much in total a magic user can cast magic)
 * Multiplicity (how many targets)
-* Duration *how long the magic lasts)
+* Duration (how long the magic lasts)
 * Concentration (mental effort)
 
 These factors make quite a bit of assumptions, but they are meant to be independent of magic systems (can be applied across stories with different behaving magic, assuming assumptions match)
