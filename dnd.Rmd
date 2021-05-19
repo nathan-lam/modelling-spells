@@ -11,6 +11,7 @@ library(pls)
 library(glmnet) #
 library(stringr)
 library(randomForest)
+library(rpart)
 
 ```
 
@@ -148,9 +149,35 @@ spells$Duration <- as.numeric(spells$Duration)
 spells$Concentration <- as.numeric(spells$Concentration)
 spells
 
-
+# linear model
 levels <- lm(Level~. ,data=spells)
 summary(levels)
+
+
+
+# CART model
+tree <- rpart(Level~., data = spells,cp=0.02)
+plotcp(tree)
+
+
+opar <- par()
+par(xpd=TRUE)
+plot(tree)
+text(tree)
+
+## using raw data
+raw_tree <- rpart(Level~.,data=spell_list[,c(-1,-3)])
+
+opar <- par()
+par(xpd=TRUE)
+plot(raw_tree)
+text(raw_tree)
+
+
+# PCA
+spell_pca <- prcomp(spells,scale. = T,center = T)
+summary(spell_pca)
+
 
 
 ```
